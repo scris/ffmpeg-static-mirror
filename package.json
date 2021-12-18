@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-static-mirror",
-  "version": "5.4.4",
+  "version": "10.431.0",
   "description": "ffmpeg static binaries for Mac OSX and Linux and Windows, on a mirror.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scris/ffmpeg=static-mirror"
+    "url": "https://github.com/scris/ffmpeg-static-mirror"
   },
   "keywords": [
     "ffmpeg",

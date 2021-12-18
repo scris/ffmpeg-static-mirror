@@ -21,4 +21,3 @@ function getPath(name) {
 }
 
 exports.ffmpegPath = getPath("ffmpeg");
-exports.ffprobePath = getPath("ffprobe");
