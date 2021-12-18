@@ -1,0 +1,60 @@
+{
+  "name": "ffmpeg-static-mirror",
+  "version": "5.4.4",
+  "description": "ffmpeg static binaries for Mac OSX and Linux and Windows, on a mirror.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "install.js",
+    "example.js"
+  ],
+  "scripts": {
+    "install": "node install.js",
+    "test": "node test.js",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint && npm test",
+    "postinstall": "patch-package"
+  },
+  "ffmpeg-static": {
+    "binary-release-tag": "b4.3.1-rc.5",
+    "binary-release-name": "4.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scris/ffmpeg=static-mirror"
+  },
+  "keywords": [
+    "ffmpeg",
+    "static",
+    "library",
+    "binary",
+    "binaries",
+    "mac",
+    "linux",
+    "windows"
+  ],
+  "authors": [
+    "Eugene Ware <eugene@noblesamurai.com>",
+    "Tianze Ds Qiu <slaaker@126.com>"
+  ],
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/scris/ffmpeg=static-mirror/issues"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@derhuerst/http-basic": "^8.2.0",
+    "env-paths": "^2.2.0",
+    "https-proxy-agent": "^5.0.0",
+    "patch-package": "^6.2.2",
+    "progress": "^2.0.3"
+  },
+  "devDependencies": {
+    "any-shell-escape": "^0.1.1",
+    "eslint": "^7.2.0"
+  }
+}
